@@ -18,8 +18,11 @@ const updateTodo = (todo: Todo, fieldsToUpdate: Partial<Todo>) => {
 };
 
 export const main = () => {
-  const newTodo = updateTodo(todo1, { title: "new todo" });
+  const newTodo = updateTodo(todo1, {
+    title: "Update fac ts talk for next time",
+  });
 
+  console.log({ todo1 });
   console.log({ newTodo });
 };
 
