@@ -13,9 +13,9 @@ var __assign = (this && this.__assign) || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.main = void 0;
 var todo1 = {
+    id: 1,
     title: "do a FAC talk",
     description: "find gifs",
-    foo: "bar",
 };
 var updateTodo = function (todo, fieldsToUpdate) {
     return __assign(__assign({}, todo), fieldsToUpdate);
@@ -27,14 +27,7 @@ var main = function () {
     });
     console.log({ todo1: todo1 });
     console.log({ newTodo: newTodo });
+    console.log(todo1 instanceof Object);
 };
 exports.main = main;
-// const name = "tony" as unknown as number;
-// Excess Property Checks
-// In this case, Typescript won’t check for excess properties as type Person is a subset of the type inferred for variable x, which is inferred to include all properties in Person plus age. This is known as duck-typing or structural typing
-// "If it walks like a duck and it quacks like a duck, then it must be a duck"
-// const todo2 = {
-//   title: "learn python",
-//   description: "🐍",
-//   id: 2,
-// };
+(0, exports.main)();

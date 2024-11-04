@@ -1,7 +1,4 @@
-export function add(number1, number2) {
-  if (typeof number1 !== "number" || typeof number2 !== "number") {
-    throw new Error("that's not a number!");
-  }
+function add(number1, number2) {
   const result = number1 + number2;
   return result;
 }
@@ -11,7 +8,8 @@ export function add(number1, number2) {
 // console.log("result: ", add(2, "foo"));
 // console.log("result: ", add(2, {}));
 // console.log("result: ", add(2, []));
-// console.log("result: ", typeof add([], []));
+console.log("result: ", add([], []));
+console.log("result: ", typeof add([], []));
 // console.log("result: ", add(2));
 
 // let fname = "tony";
